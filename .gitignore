@@ -1,0 +1,49 @@
+DishesHub.Api/bin/
+DishesHub.Api/obj/
+DishesHub.Api//packages/
+DishesHub.Api/riderModule.iml
+DishesHub.Api/_ReSharper.Caches/
+DishesHub.Api/appsettings.json
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+DishesHub.Frontend/dist
+DishesHub.Frontend/tmp
+DishesHub.Frontend/out-tsc
+DishesHub.Frontend/bazel-out
+
+# Node
+DishesHub.Frontend/node_modules
+DishesHub.Frontend/npm-debug.log
+DishesHub.Frontend/yarn-error.log
+
+# IDEs and editors
+DishesHub.Frontend/.idea/
+DishesHub.Frontend/.project
+DishesHub.Frontend/.classpath
+DishesHub.Frontend/.c9/
+DishesHub.Frontend/*.launch
+DishesHub.Frontend/.settings/
+DishesHub.Frontend/*.sublime-workspace
+
+# Visual Studio Code
+DishesHub.Frontend/.vscode/*
+DishesHub.Frontend/!.vscode/settings.json
+DishesHub.Frontend/!.vscode/tasks.json
+DishesHub.Frontend/!.vscode/launch.json
+DishesHub.Frontend/!.vscode/extensions.json
+DishesHub.Frontend/.history/*
+
+# Miscellaneous
+DishesHub.Frontend/.angular/cache
+DishesHub.Frontend/.sass-cache/
+DishesHub.Frontend/connect.lock
+DishesHub.Frontend/coverage
+DishesHub.Frontend/libpeerconnection.log
+DishesHub.Frontend/testem.log
+DishesHub.Frontend/typings
+
+# System files
+DishesHub.Frontend/.DS_Store
+DishesHub.Frontend/Thumbs.db
