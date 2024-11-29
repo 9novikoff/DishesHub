@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "qEb98iulQKtqgcU9BteoV0G0odLZDRj8GYNz2N0+umk=",
+  "Source": "DishesHub.Api",
+  "BasePath": "_content/DishesHub.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
