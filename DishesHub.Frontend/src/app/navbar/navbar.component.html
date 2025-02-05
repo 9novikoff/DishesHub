@@ -1,0 +1,11 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <a routerLink="/">DishesHub</a>
+  </div>
+  <ul class="navbar-links">
+    <li *ngIf="!authService.isAuthenticated()"><a routerLink="/login">Sign In</a></li>
+    <li *ngIf="!authService.isAuthenticated()"><a routerLink="/register">Sign Up</a></li>
+    <li *ngIf="authService.isAuthenticated()"><a routerLink="/profile">Welcome, {{authService.getUserEmail() }}</a></li>
+    <li *ngIf="authService.isAuthenticated()"><a (click)="logout()">Logout</a></li>
+  </ul>
+</nav>

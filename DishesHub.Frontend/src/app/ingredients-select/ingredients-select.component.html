@@ -1,0 +1,41 @@
+<div class="ingredients-selector">
+  <h2>Select Ingredients</h2>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search ingredients..." (input)="filterIngredients($event)">
+  </div>
+
+  <section class="available-ingredients-section">
+    <div class="available-ingredients">
+      <span *ngFor="let ingredient of filteredIngredients" class="ingredient-item">
+        {{ ingredient.name }}
+        <button class="include-button" (click)="addToInclude(ingredient)">&#10003;</button>
+        <button class="exclude-button" (click)="addToExclude(ingredient)">&#10007;</button>
+      </span>
+    </div>
+  </section>
+
+  <div class="selected-sections">
+    <section class="selected-section">
+      <h3>Ingredients to Include</h3>
+      <div class="selected-ingredients" [ngClass]="{'scrollable': selectedInclude.length > 5}">
+        <span *ngFor="let ingredient of selectedInclude" class="ingredient-tag include">
+          {{ ingredient.name }}
+          <button class="remove-button" (click)="removeFromInclude(ingredient)">×</button>
+        </span>
+      </div>
+    </section>
+
+    <section class="selected-section">
+      <h3>Ingredients to Exclude</h3>
+      <div class="selected-ingredients" [ngClass]="{'scrollable': selectedExclude.length > 5}">
+        <span *ngFor="let ingredient of selectedExclude" class="ingredient-tag exclude">
+          {{ ingredient.name }}
+          <button class="remove-button" (click)="removeFromExclude(ingredient)">×</button>
+        </span>
+      </div>
+    </section>
+  </div>
+
+  <button class="find-button" (click)="findRecipes()">Find Matching Recipes</button>
+</div>

@@ -1,9 +1,9 @@
-DishesHub.Api/bin/
-DishesHub.Api/obj/
-DishesHub.Api//packages/
-DishesHub.Api/riderModule.iml
-DishesHub.Api/_ReSharper.Caches/
-DishesHub.Api/appsettings.json
+DishesHub.Api/src/bin/
+DishesHub.Api/src/obj/
+DishesHub.Api/src/packages/
+DishesHub.Api/src/riderModule.iml
+DishesHub.Api/src/_ReSharper.Caches/
+DishesHub.Api/src/appsettings.json
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 

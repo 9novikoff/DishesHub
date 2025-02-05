@@ -1,0 +1,10 @@
+<div class="matching-recipes-container">
+    <h2>Matching Recipes</h2>
+  
+    <p *ngIf="recipes.length > 0">Found {{ recipes.length }} recipes.</p>
+    <p *ngIf="recipes.length === 0">No recipes found.</p>
+  
+    <app-recipe-list [recipes]="recipes"></app-recipe-list>
+
+  </div>
+  

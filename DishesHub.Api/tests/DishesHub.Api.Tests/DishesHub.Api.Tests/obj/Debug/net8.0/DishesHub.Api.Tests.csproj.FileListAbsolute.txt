@@ -134,3 +134,4 @@ C:\Users\Novikov\pet\DishesHub\DishesHub.Api\tests\DishesHub.Api.Tests\DishesHub
 C:\Users\Novikov\pet\DishesHub\DishesHub.Api\tests\DishesHub.Api.Tests\DishesHub.Api.Tests\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Novikov\pet\DishesHub\DishesHub.Api\tests\DishesHub.Api.Tests\DishesHub.Api.Tests\bin\Debug\net8.0\DishesHub.Api.dll
 C:\Users\Novikov\pet\DishesHub\DishesHub.Api\tests\DishesHub.Api.Tests\DishesHub.Api.Tests\bin\Debug\net8.0\DishesHub.Api.pdb
+C:\Users\Novikov\pet\DishesHub\DishesHub.Api\tests\DishesHub.Api.Tests\DishesHub.Api.Tests\obj\Debug\net8.0\DishesHub.Api.Tests.sourcelink.json

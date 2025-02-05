@@ -1,0 +1,9 @@
+<div class="profile-container">
+    <div class="profile-header">
+      <img src="assets/default-avatar.png" alt="Avatar" class="profile-avatar" />
+      <h2>{{ authService.getUserEmail() }}</h2>
+    </div>
+    <app-recipe-list [recipes]="recipes"></app-recipe-list>
+    <button (click)="addRecipe()">Add Recipe</button>
+  </div>
+  

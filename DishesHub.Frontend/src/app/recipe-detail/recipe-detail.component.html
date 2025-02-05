@@ -1,0 +1,29 @@
+<div class="recipe-detail-container">
+  <h2>{{ recipe!.name }}</h2>
+
+  <div class="recipe-content">
+    <div class="recipe-image">
+      <img *ngIf="recipe?.picture" [src]="recipe!.picture" alt="{{ recipe!.name }}">
+    </div>
+
+    <div class="recipe-description">
+      <h3>Author:</h3>
+      <p>{{ recipe!.authorEmail }}</p>
+
+      <h3>Description:</h3>
+      <p>{{ recipe!.description }}</p>
+
+      <h3>Ingredients:</h3>
+      <ul>
+        <li *ngFor="let ingredient of recipe?.ingredients">
+          {{ ingredient.name }}
+        </li>
+      </ul>
+
+      <h3 *ngIf="recipe!.videoRefference" >Watch Video:</h3>
+      <a *ngIf="recipe!.videoRefference" href="https://www.youtube.com/watch?v={{ recipe!.videoRefference }}" target="_blank">Watch on YouTube</a>
+    </div>
+  </div>
+</div>
+
+<app-rate-section [recipeId]="recipe.id" [rates]="rates"></app-rate-section>

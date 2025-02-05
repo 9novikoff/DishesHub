@@ -280,3 +280,5 @@ C:\Users\Novikov\pet\DishesHub\DishesHub.Api\src\obj\Debug\net8.0\refint\DishesH
 C:\Users\Novikov\pet\DishesHub\DishesHub.Api\src\obj\Debug\net8.0\DishesHub.Api.pdb
 C:\Users\Novikov\pet\DishesHub\DishesHub.Api\src\obj\Debug\net8.0\DishesHub.Api.genruntimeconfig.cache
 C:\Users\Novikov\pet\DishesHub\DishesHub.Api\src\obj\Debug\net8.0\ref\DishesHub.Api.dll
+C:\Users\Novikov\pet\DishesHub\DishesHub.Api\src\obj\Debug\net8.0\DishesHub.Api.sourcelink.json
+C:\Users\Novikov\pet\DishesHub\DishesHub.Api\src\bin\Debug\net8.0\AutoMapper.dll

@@ -1,0 +1,18 @@
+.rate-container{
+    margin: 5px;
+}
+
+.star-rating{
+    margin-top: 5px;
+}
+
+.comment textarea{
+    margin-top: 5px;
+    border: none;
+    width: 100%;
+    resize: none;
+}
+
+.comment textarea:focus{
+    outline: none;
+}

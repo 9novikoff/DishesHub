@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DishesHub.Api.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4412bd16fe8ea9d6529a4c7db7dd1317694ddf9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c0850e66324598abba8cc54da1423e7bf127b66")]
 [assembly: System.Reflection.AssemblyProductAttribute("DishesHub.Api.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DishesHub.Api.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

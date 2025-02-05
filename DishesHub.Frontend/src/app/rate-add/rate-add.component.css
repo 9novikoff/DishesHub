@@ -1,0 +1,37 @@
+.add-rate-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-rate-error{
+    color: red;
+}
+
+.star-rating{
+    margin-top: 5px;
+}
+
+.comment input{
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.comment input:focus {
+    outline: none;
+}
+
+.submit input{
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}

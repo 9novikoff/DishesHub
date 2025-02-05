@@ -1,0 +1,9 @@
+<div class="rate-container">
+    <div class="rate-header">{{rate.userName}}</div>
+    <div class="star-rating">
+        <app-star-rating [rating]="rate.rating" [editable]="false" ></app-star-rating>
+    </div>
+    <div class="comment">
+        <textarea readonly>{{rate.comment}}</textarea>
+    </div>
+</div>

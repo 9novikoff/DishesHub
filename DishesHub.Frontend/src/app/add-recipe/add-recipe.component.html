@@ -1,0 +1,86 @@
+<div class="add-recipe-container">
+    <h2>Add New Recipe</h2>
+  
+    <div class="form-group">
+        <label for="recipeName">Recipe Name</label>
+        <input
+            id="recipeName"
+            type="text"
+            [(ngModel)]="recipe.name"
+            name="name"
+            required
+            placeholder="Enter the recipe name"
+        />
+    </div>
+
+    <!-- Dish Selection -->
+    <div class="form-group">
+      <label for="dishId">Select Dish</label>
+      <select id="dishId" [(ngModel)]="recipe.dishId" class="form-control" required>
+        <option *ngFor="let dish of dishes" [value]="dish.id">{{ dish.name }}</option>
+      </select>
+    </div>
+  
+    <!-- Ingredient Selection -->
+    <div class="form-group">
+      <label for="ingredients">Select Ingredients</label>
+      <div class="ingredients-container">
+        <!-- Ingredient Search Bar -->
+        <input 
+          id="ingredientSearch"
+          type="text" 
+          [(ngModel)]="ingredientSearch" 
+          (input)="filterIngredients()"
+          placeholder="Search Ingredients"
+          class="form-control"
+        />
+  
+        <!-- Selected Ingredients Chips -->
+        <div class="selected-ingredients">
+          <div 
+            *ngFor="let ingredient of selectedIngredientsList" 
+            class="selected-chip"
+            (click)="removeIngredient(ingredient)"
+          >
+            {{ ingredient.name }}
+            <span class="remove-chip">x</span>
+          </div>
+        </div>
+  
+        <!-- Available Ingredients List -->
+        <div class="available-ingredients">
+          <div
+            *ngFor="let ingredient of filteredIngredients"
+            class="ingredient-option"
+            (click)="toggleIngredientSelection(ingredient)"
+          >
+            {{ ingredient.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Image Upload Section -->
+    <div class="form-group">
+      <label for="image">Upload Image</label>
+      <input type="file" (change)="onImageChange($event)" id="image" class="form-control-file" />
+      <div class="image-preview" *ngIf="imagePreview">
+        <img [src]="imagePreview" alt="Image Preview" />
+      </div>
+    </div>
+  
+    <!-- Description and Video -->
+    <div class="form-group">
+      <label for="description">Recipe Description</label>
+      <textarea [(ngModel)]="recipe.description" class="form-control" required></textarea>
+    </div>
+  
+    <div class="form-group">
+      <label for="videoRefference">Video Reference</label>
+      <input [(ngModel)]="recipe.videoRefference" class="form-control" />
+    </div>
+  
+    <!-- Submit Button -->
+    <button (click)="onSubmit()">Submit Recipe</button>
+  </div>
+  

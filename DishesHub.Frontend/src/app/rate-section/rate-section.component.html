@@ -1,0 +1,7 @@
+<app-rate-add [recipeId]="recipeId"></app-rate-add>
+<div class="comments-section">
+<div class="comments-header">Comments</div>
+@for (rate of rates; track $index) {
+    <app-rate [rate]="rate"></app-rate>
+} 
+</div>

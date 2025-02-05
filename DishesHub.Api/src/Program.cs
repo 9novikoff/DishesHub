@@ -14,6 +14,8 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.Services.AddAutoMapper(typeof(MappingProfile));
+
         builder.Services.AddAuthorization();
 
         builder.Services.AddDbContext<DishesHubDbContext>(o =>
@@ -21,6 +23,7 @@ public class Program
         
         builder.Services.AddScoped<IRecipeService, RecipeService>();
         builder.Services.AddScoped<IIngredientService, IngredientService>();
+        builder.Services.AddScoped<IRateService, RateService>();
         
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();

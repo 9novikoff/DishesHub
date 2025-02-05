@@ -37,6 +37,15 @@ public static class DishesHubEndpoints
         app.MapGet("/current-user", (HttpContext httpContext) => new {Id = httpContext.User.Claims.ToList()[0].Value, Email = httpContext.User.Claims.ToList()[1].Value});
         
         app.MapGet("/dishes", (DishesHubDbContext dbContext) => dbContext.Dishes);
+
+        app.MapPost("/rate", async (HttpContext httpContext, RatePostDto rate, IRateService rateService) =>
+        {
+            rate.UserId = httpContext.User.Claims.ToList()[0].Value;
+            await rateService.AddRate(rate);
+            return Results.Ok();
+        }).RequireAuthorization();
+        
+        app.MapGet("/rate/{id}", (int id, IRateService rateService) => rateService.GetAllRatesForRecipeId(id));
         
         return app;
     }
